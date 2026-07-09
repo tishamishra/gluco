@@ -64,6 +64,18 @@ export default function Footer() {
 
         <div className="border-t border-gray-700 pt-8">
           <p className="text-sm text-gray-400 mb-4">
+            Featured on{' '}
+            <a
+              href="https://www.affinsight.com/offers/glycomute-effective-blood-sugar-support"
+              target="_blank"
+              rel="noopener"
+              className="text-yellow-400 hover:text-yellow-500"
+            >
+              Affinsight
+            </a>
+            {' '}— see the full GlycoMute offer details and comparisons.
+          </p>
+          <p className="text-sm text-gray-400 mb-4">
             <strong>FDA Compliance</strong><br />
             All content and information found on this page are for informational purposes only and are not intended to diagnose, treat, cure or prevent any disease. The FDA hasn't evaluated the statements provided on this page. Make sure you consult with a licensed doctor before taking any supplement or making any changes to your diet or exercise plan. Individual results may vary.
           </p>

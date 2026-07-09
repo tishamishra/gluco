@@ -1,11 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
+  const faqs: { question: string; answer: ReactNode }[] = [
     {
       question: "What is GlycoMute?",
       answer: "GlycoMute is a plant-based supplement that helps keep blood sugar steady and energy even."
@@ -45,6 +45,23 @@ export default function FAQ() {
     {
       question: "Is there a money-back guarantee?",
       answer: "Yes. There’s a 90-day money-back guarantee."
+    },
+    {
+      question: "Where can I find an independent overview of the GlycoMute offer?",
+      answer: (
+        <>
+          If you’d like a third-party summary before deciding, GlycoMute is listed on Affinsight, where you can review the{' '}
+          <a
+            href="https://www.affinsight.com/offers/glycomute-effective-blood-sugar-support"
+            target="_blank"
+            rel="noopener"
+            style={{ color: 'var(--secondary)', fontWeight: 700, textDecoration: 'underline' }}
+          >
+            GlycoMute blood sugar support offer
+          </a>{' '}
+          alongside other health products.
+        </>
+      )
     }
   ];
 
